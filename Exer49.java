@@ -4,29 +4,26 @@ public class Exer49 {
 
     public static void main (String[]args) {
 
-    	Scanner scan = new Scanner (System.in);
+    	Scanner scan = new Scanner(System.in);
 
-    	int x=1, somaP=0, somaN=0;
+    	int x=1;
+    	float somaP =0, somaN =0;
 
-    	System.out.println("======= Digite [0] para encerrar =========");
+    	System.out.println("====== Digite [0] para encerrar ========");
 
-		while(x!=0){
+    	while(x!= 0){
 
-			System.out.print("Entre com o número: ");
-			x = scan.nextInt();
+    		System.out.print("Entre com o número: ");
 
-			if(x > 0){
-				somaP++;
-			}
-			else{
-				somaN++;
-			}
-		}
-		somaN--;
+    		if(x>0){
+    			somaP += x;
+    		}
+    		else{
+    			somaN += x;
+    		}
+    	}
 
-    	System.out.printf("\nQuantidade de números Positivos: %s", somaP);
-    	System.out.printf("\nQuantidade de números Negativos: %s", somaN);
-
+    	System.out.printf("Soma positvios: %.2f \nSoma negativos: %.2f", somaP, somaN);
     }
 
 

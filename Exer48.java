@@ -6,26 +6,24 @@ public class Exer48 {
 
     	Scanner scan = new Scanner (System.in);
 
-    	int x=0, qtdPar=0, qtdImpar=0;
+    	int X=0, qtdPar=0, qtdImpar = 0;
 
-    	System.out.println("======= Digite [-1] para encerrar =========");
+    	System.out.println("====== Digite -1 para finalizar ======");
 
-		while(x!=-1){
+    	while(X!=-1){
+    		System.out.print("Entre com os números: ");
+    		X = scan.nextInt();
+    		if((X % 2) == 0){
+    			qtdPar++;
+    		}
+    		else{
+    			qtdImpar++;
+    		}
+    	}
+		qtdImpar--;
+    	System.out.printf("\nQuantidade de números Pares: %d \nQuantidade de números impares: %d", qtdPar, qtdImpar);
 
-			System.out.print("Entre com o número: ");
-			x = scan.nextInt();
 
-			if((x % 2) == 0){
-				qtdPar++;
-			}
-			else{
-				qtdImpar++;
-			}
-		}
-    	qtdImpar--;
-
-    	System.out.printf("\nQuantidade de números Pares: %s", qtdPar);
-    	System.out.printf("\nQuantidade de números Impares: %s", qtdImpar);
 
     }
 

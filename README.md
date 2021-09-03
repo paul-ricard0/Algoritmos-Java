@@ -1,2 +1,2 @@
-# JavaFacul
- Meus códigos feitos na disciplina de Construção de Algoritmos no Segundo Semestre
+# Algoritmos-Java 
+# Meus códigos feitos na disciplina de Construção de Algoritmos no Segundo Semestre
